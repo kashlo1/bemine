@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine's Invitation</title>
+<style> body { font-family: 'Arial', sans-serif; background-color: #f11906; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; } .container { display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; } .card { width: 300px; padding: 20px; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #ffffff; } h1 { font-size: 24px; color: #ff6b6b; margin-bottom: 20px; } button { padding: 10px 20px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer; background-color: #ff6b6b; color: white; transition: background-color 0.3s ease; } button:hover { background-color: #ff4d4d; } video { width: 300px; height: auto; border-radius: 20px; margin-top: 20px; } </style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<h1>Will you go Valentine's with me?</h1>
+<button id="yesBtn" onclick="showContact()">Yes!</button>
+<button id="noBtn" onclick="increaseSize()">No, sorry!</button>
+</div>
+<video controls loop src="Rizz.mp4" width="500"></video>
+</div>
+<script> function increaseSize() { var yesButton = document.getElementById('yesBtn'); var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize); yesButton.style.fontSize = (currentFontSize + 2) + 'px'; } function showContact() { var card = document.querySelector('.card'); card.innerHTML = "<h1>Nah but fr tho you gorgeous asf add me up i wanna tell you smth!</h1><p>Insta: @kxshlo</p>"; } </script>
+</body>
+</html>
